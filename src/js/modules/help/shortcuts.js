@@ -30,6 +30,7 @@ class Help_shortcuts_class {
 				{title: "Shift + S", value: 'Save As'},
 				{title: "CTRL + A", value: 'Select All'},
 				{title: "H", value: 'Shapes'},
+				{title: "E", value: 'Eraser'},
 				{title: "T", value: 'Trim'},
 				{title: "CTRL + Z", value: 'Undo'},
 				{title: "Scroll up", value: 'Zoom in'},

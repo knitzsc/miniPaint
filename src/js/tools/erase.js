@@ -18,6 +18,15 @@ class Erase_class extends Base_tools_class {
 
 	load() {
 		this.default_events();
+		document.addEventListener('keydown', (event) => {
+			if (this.Helper.is_input(event.target))
+				return;
+
+			if (event.keyCode == 69 && event.ctrlKey != true && event.metaKey != true) {
+				app.State.do_action(new app.Actions.Activate_tool_action(this.name));
+				event.preventDefault();
+			}
+		});
 	}
 
 	default_dragMove(event, is_touch) {
